@@ -1,0 +1,190 @@
+* {
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  letter-spacing: .25em;
+  line-height: 2em;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4b3676+0,3f5896+100 */
+  background: #4b3676; /* Old browsers */
+  background: -moz-linear-gradient(left, #4b3676 0%, #3f5896 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #4b3676 0%,#3f5896 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #4b3676 0%,#3f5896 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4b3676', endColorstr='#3f5896',GradientType=1 ); /* IE6-9 */
+}
+
+/*.hero-image {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  min-width: 980px;
+  z-index: -1;
+}*/
+
+.clearfix {
+  clear: both;
+}
+
+.content {
+  display: block;
+  margin: 10px auto;
+  width: 650px;
+}
+
+.content.large {
+  width: 700px;
+}
+
+.logo-image {
+  width: 380px;
+  clear: both;
+  margin-top: 100px !important;
+  margin-bottom: 40px;
+}
+
+.hero-wrapper {
+  background-image: url('/images/background-hero.jpg');
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+
+  overflow: hidden;
+}
+
+.footer-header {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.customer-logos {
+  width: 500px;
+  margin-bottom: 60px;
+}
+
+.customer-logo {
+  width: 68px;
+  vertical-align: middle;
+  display: inline-block;
+  margin: 10px 12px;
+}
+
+.customer-logo.bottom {
+  width: 90px;
+  margin: 10px 14px;
+}
+
+.footer .content-separator {
+  opacity: .5;
+  margin-bottom: 40px;
+  width: 370px;
+}
+
+.infographic-image {
+  margin: 70px auto;
+  width: 370px;
+}
+
+.content-separator {
+  border-style: solid;
+  border-top-width: 0px;
+  color: white;
+  width: 500px;
+}
+
+.description {
+  text-align: center;
+  font-size: 1.15em;
+  font-weight: 300;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.franklin-container {
+  text-align: center;
+}
+
+.footer-bottom {
+  padding: 10px;
+  background-color: #21132a;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.footer h4 {
+  opacity: .5;
+  font-size: 12px;
+  margin-bottom: 30px;
+}
+
+.footer {
+  padding-top: 20px;
+}
+
+.footer-bottom span {
+  color: #766d7b;
+  font-size: .75em;
+}
+
+.ben-image {
+  width: 110px;
+  display: block;
+  margin: auto;
+}
+
+.contact-link {
+  float: right;
+  margin-right: 20px;
+  margin-top: 20px;
+  display: block;
+}
+
+@media only screen and (max-width: 736px) {
+  .content.large {
+    width: 100%;
+  }
+
+  .description {
+    font-size: 1em;
+    padding: 5px;
+  }
+
+  .contact-link {
+    float: none;
+    display: block;
+    margin: 20px;
+    text-align: center;
+  }
+
+  .content {
+    width: 320px;
+  }
+
+  .logo-image {
+    margin-top: 40px !important;
+  }
+
+  .customer-logo {
+    width: 47px;
+    margin: 10px 5px;
+  }
+
+  .customer-logo.bottom {
+    width: 63px;
+    margin: 10px 5px;
+  }
+
+  .logo-image, .content-separator {
+    width: 75%;
+  }
+}
