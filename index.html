@@ -2,43 +2,108 @@
 <html>
   <head>
     <title>Indigov</title>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900" rel="stylesheet">
+    <link href="/tailwind.min.css" rel="stylesheet">
     <link href="/style.css" rel="stylesheet">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta property="og:url" content="https://indigov.us">
+    <meta property="og:title" content="Indigov">
+    <meta property="og:image" content="https://indigov.us/images/3d-flag.png">
+    <meta property="og:description" content="We are a group of technologists working to bridge the gap between Silicon Valley and Capitol Hill">
   </head>
-<body>
-    <div class="hero-wrapper">
-        <a class="contact-link" href="mailto:alex@indigovern.com?subject=Murica&amp;body=">CONTACT US</a>
-        <div class="clearfix"></div>
-        <img class="logo-image content" src="/images/logo.png" alt="Indigov">
-        <p class="description content large">
-            We are a group of technologists working to bridge 
-            the gap between Silicon Valley and Capitol Hill
-        </p>
-        <hr class="content content-separator">
-        <img class="infographic-image content" src="/images/info-graphic.svg" alt="Silicon Valley to Capitol Hill">
+  <body>
+    <div class="i-bg-black text-white">
+      <div class="container mx-auto">
+        <div class="items-center pt-4 hidden sm:flex">
+          <div class="flex-1">
+            <img class="i-nav-logo" src="/images/indigov-logo.png">
+          </div>
+          <div class="flex-1 text-right text-xs flex tracking-wide">
+            <a class="flex-1 py-2 text-center i-nav-hover uppercase text-white no-underline" href="javascript:void(0);" onclick="iScrollTo('about');">About</a>
+            <a class="flex-1 py-2 text-center i-nav-hover uppercase text-white no-underline" href="javascript:void(0);" onclick="iScrollTo('products');">Products</a>
+            <a class="flex-1 py-2 text-center i-nav-hover uppercase text-white no-underline" onclick="mailTo('contact@indigov.us');" href="javascript:void(0);">Contact</a>
+          </div>
+        </div>
+        <div class="text-center pt-16">
+          <img class="block i-3d-flag mx-auto mb-8" src="/images/3d-flag.svg">
+          <img class="block i-hero-logo mx-auto mb-6" src="/images/indigov-logo.png">
+          <div class="text-xl i-hero-text mx-auto pb-6 leading-normal">We are a group of technologists working to bridge the gap between Silicon Valley and Capitol Hill</div>
+        </div>
+      </div>
     </div>
-    <div class="footer">
-        <h4 class="footer-header content">Some Past Clients</h4>
-        <div class="customer-logos content">
-            <img class="customer-logo" src="/images/Bitmap.png" alt="Customer Logo">
-            <img class="customer-logo" src="/images/Senate.png" alt="Customer Logo">
-            <img class="customer-logo" src="/images/ESPN.png" alt="Customer Logo">
-            <img class="customer-logo" src="/images/Disney.png" alt="Customer Logo">
-            <img class="customer-logo" src="/images/ABC.png" alt="Customer Logo">
-
-            <img class="customer-logo bottom" src="/images/Lloyds.png" alt="Customer Logo">
-            <img class="customer-logo bottom" src="/images/GA.png" alt="Customer Logo">
-            <img class="customer-logo bottom" src="/images/Pepperdine.png" alt="Customer Logo">
-            <img class="customer-logo bottom" src="/images/Wharton.png" alt="Customer Logo">
-        </div>
-        <hr class="content content-separator">
-        <div class="franklin-container content">
-            <img class="ben-image" src="/images/ben.png" alt="Ben Franklin">
-        </div>
-        <div class="footer-bottom">
-            <span>CONGRATULATIONS! You've reached the bottom of the page! Well done!</span>
-        </div>
+    <img class="block i-triangle-down w-full" src="/images/triangle-down.svg">
+    <div class="text-center">
+      <div class="container mx-auto leading-tight text-justify mb-12">
+        <div class="uppercase pt-12 text-2xl leading-none font-black text-grey-light">How can you tell if democracy is working? How have the needs of constituents changed in the new age of the internet? What does a connected democracy look like? What if your government was re-designed with you in mind?</div>
+        <div>We believe that representative democracy is one of the greatest inventions in the history of mankind... but it has a scaling problem. It's an invention responsible for enormous increases in human development and well-being that is struggling to deal with demands put upon it by a vast constituency and a rapidly changing technological landscape. As our expectations for our elected officials have changed, so too must the tools we give them to serve us. At Indigov, we are building those tools.</div>
+      </div>
     </div>
+    <div class="text-center i-bg-black text-white i-benny-bg bg-cover bg-no-repeat bg-left bg-top">
+      <div class="container mx-auto pt-12 pb-16">
+        <img class="block mx-auto i-america mb-6" src="/images/america.svg">
+        <div class="flex flex-wrap items-center">
+          <div class="w-full md:w-1/5">
+            <div class="text-5xl font-bold leading-none">570k</div>
+            <div class="text-xs">elected officials in the US</div>
+          </div>
+          <div class="w-full md:w-1/5 font-bold text-grey text-xl py-4">spend</div>
+          <div class="w-full md:w-1/5">
+            <div class="text-5xl font-bold leading-none">$31b</div>
+            <div class="text-xs">every year</div>
+          </div>
+          <div class="w-full md:w-1/5 font-bold text-grey text-xl py-4">to manage</div>
+          <div class="w-full md:w-1/5">
+            <div class="text-5xl font-bold leading-none">5.9b</div>
+            <div class="text-xs">messages from citizens</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="i-bg-black text-white py-16">
+      <div class="container mx-auto">
+        <div id="about" class="mb-12">
+          <h2 class="text-grey-darker uppercase">About us</h2>
+          <div>We are a group of silicon valley technologists who have dedicted our careers to serving, developing and innovating at the intersection of technology and government. We are passionate about approaching complex problems with first order thinking, stripping them down to their base factors and building innovative solutions to solve them. Our goal is to make government more efficient through effective technologies.</div>
+        </div>
+        <div id="products" class="mb-12">
+          <h2 class="text-grey-darker uppercase">Products</h2>
+          <div>Coming soon.</div>
+        </div>
+        <div class="mb-4">
+          <h2 class="text-grey-darker uppercase">Organizations we've worked with</h2>
+          <div class="flex">
+            <div class="flex-1 i-logos pt-2">
+              <img src="/images/logos/senate.png">
+              <img src="/images/logos/house.png">
+              <img src="/images/logos/abc.png">
+              <img class="p-1" src="/images/logos/disney.png">
+              <img src="/images/logos/honest.png">
+              <img class="p-3" src="/images/logos/espn.png">
+              <img class="p-1" src="/images/logos/lloyds.png">
+              <img class="p-2" src="/images/logos/ga.png">
+              <img class="p-2" src="/images/logos/wharton.png">
+              <img src="/images/logos/brigade.png">
+              <img class="p-3" src="/images/logos/hipster.png">
+              <img class="p-3" src="/images/logos/weatherbug.png">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-cover i-delaware flex items-center">
+      <div class="container mx-auto text-center">
+        <div class="flex items-center justify-center">
+          <a onclick="mailTo('contact@indigov.us');" href="javascript:void(0);" id="contact" class="i-button tracking-wide block text-white font-bold no-underline py-3 px-6 text-xs uppercase border-white border-solid border">Contact Us</a>
+          <div class="i-line text-white mx-6 border-white border-l border-solid">&nbsp;</div>
+          <a onclick="mailTo('press@indigov.us');" href="javascript:void(0);" id="contact" class="i-button tracking-wide block text-white font-bold no-underline py-3 px-6 text-xs uppercase border-white border-solid border">Press Inquiries</a>
+        </div>
+      </div>
+    </div>
+    <div class="i-bg-black text-center py-4">
+      <div class="container mx-auto">
+        <img class="i-benny-footer" src="/images/benny-smile.png">
+      </div>
+    </div>
+    <script src="/script.js"></script>
   </body>
 </html>

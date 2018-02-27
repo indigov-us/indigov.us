@@ -1,190 +1,69 @@
-* {
-  font-family: 'Montserrat', sans-serif;
-  color: white;
-  letter-spacing: .25em;
-  line-height: 2em;
-}
-
-html, body {
-  padding: 0;
-  margin: 0;
-}
-
+/* tags -----> */
 body {
-
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4b3676+0,3f5896+100 */
-  background: #4b3676; /* Old browsers */
-  background: -moz-linear-gradient(left, #4b3676 0%, #3f5896 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(left, #4b3676 0%,#3f5896 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to right, #4b3676 0%,#3f5896 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4b3676', endColorstr='#3f5896',GradientType=1 ); /* IE6-9 */
+  font-family: 'Montserrat', sans-serif;
 }
 
-/*.hero-image {
-  top: 0;
-  left: 0;
-  position: absolute;
-  width: 100%;
-  min-width: 980px;
-  z-index: -1;
-}*/
-
-.clearfix {
-  clear: both;
+/* overrides ----> */
+.container { 
+  max-width: 768px;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
-.content {
-  display: block;
-  margin: 10px auto;
-  width: 650px;
+/* additions ----> */
+.mb-12 { margin-bottom: 3rem }
+.pt-12 { padding-top: 3rem }
+.pb-16 { padding-bottom: 4rem }
+.pt-16 { padding-top: 4rem }
+.py-16 { padding-top: 4rem; padding-bottom: 4rem }
+
+/* custom classes ----> */
+.i-about-title { color: #464646 }
+
+.i-america { height: 30px }
+
+.i-benny-bg { background-image: url(/images/benny-bg.png) }
+
+.i-benny-footer { height: 60px }
+
+.i-3d-flag { height: 200px }
+
+.i-bg-black { background-color: #383838 }
+
+.i-button { 
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 200px;
 }
 
-.content.large {
-  width: 700px;
+.i-delaware {
+  background-image: url(/images/delaware.png);
+  height: 300px;
 }
 
-.logo-image {
-  width: 380px;
-  clear: both;
-  margin-top: 100px !important;
-  margin-bottom: 40px;
-}
+.i-hero-logo { height: 45px }
+.i-hero-text { max-width: 600px }
 
-.hero-wrapper {
-  background-image: url('/images/background-hero.jpg');
-  background-size: cover;
-  background-position: center top;
-  background-repeat: no-repeat;
+.i-line { transform: scaleY(7) }
 
-  overflow: hidden;
-}
-
-.footer-header {
-  text-transform: uppercase;
-  text-align: center;
-}
-
-.customer-logos {
-  width: 500px;
-  margin-bottom: 60px;
-}
-
-.customer-logo {
-  width: 68px;
-  vertical-align: middle;
+.i-logos img { 
   display: inline-block;
-  margin: 10px 12px;
+  height: 48px; 
+  margin-bottom: 0.5rem;
+  margin-right: 0.5rem;
 }
 
-.customer-logo.bottom {
-  width: 90px;
-  margin: 10px 14px;
-}
+.i-nav-hover:hover { background-color: #464646 }
 
-.footer .content-separator {
-  opacity: .5;
-  margin-bottom: 40px;
-  width: 370px;
-}
+.i-nav-logo { height: 12px }
 
-.infographic-image {
-  margin: 70px auto;
-  width: 370px;
-}
+.i-triangle-down { height: 40px }
 
-.content-separator {
-  border-style: solid;
-  border-top-width: 0px;
-  color: white;
-  width: 500px;
-}
+.i-triangle-down * { color: #383838; }
 
-.description {
-  text-align: center;
-  font-size: 1.15em;
-  font-weight: 300;
-}
-
-a {
-  text-decoration: none;
-  color: white;
-}
-
-.franklin-container {
-  text-align: center;
-}
-
-.footer-bottom {
-  padding: 10px;
-  background-color: #21132a;
-  text-align: center;
-  margin-top: 40px;
-}
-
-.footer h4 {
-  opacity: .5;
-  font-size: 12px;
-  margin-bottom: 30px;
-}
-
-.footer {
-  padding-top: 20px;
-}
-
-.footer-bottom span {
-  color: #766d7b;
-  font-size: .75em;
-}
-
-.ben-image {
-  width: 110px;
-  display: block;
-  margin: auto;
-}
-
-.contact-link {
-  float: right;
-  margin-right: 20px;
-  margin-top: 20px;
-  display: block;
-}
-
-@media only screen and (max-width: 736px) {
-  .content.large {
-    width: 100%;
-  }
-
-  .description {
-    font-size: 1em;
-    padding: 5px;
-  }
-
-  .contact-link {
-    float: none;
-    display: block;
-    margin: 20px;
-    text-align: center;
-  }
-
-  .content {
-    width: 320px;
-  }
-
-  .logo-image {
-    margin-top: 40px !important;
-  }
-
-  .customer-logo {
-    width: 47px;
-    margin: 10px 5px;
-  }
-
-  .customer-logo.bottom {
-    width: 63px;
-    margin: 10px 5px;
-  }
-
-  .logo-image, .content-separator {
-    width: 75%;
+/* responsive */
+@media (min-width: 768px) {
+  .container {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
