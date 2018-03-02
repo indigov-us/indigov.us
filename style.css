@@ -1,8 +1,3 @@
-/* tags -----> */
-body {
-  font-family: 'Montserrat', sans-serif;
-}
-
 /* overrides ----> */
 .container { 
   max-width: 768px;
@@ -17,10 +12,12 @@ body {
 .pt-16 { padding-top: 4rem }
 .py-16 { padding-top: 4rem; padding-bottom: 4rem }
 
+.text-2xs { font-size: 0.7rem }
+
 /* custom classes ----> */
 .i-about-title { color: #464646 }
 
-.i-america { height: 30px }
+.i-america { height: 40px }
 
 .i-benny-bg { background-image: url(/images/benny-bg.png) }
 
@@ -29,6 +26,7 @@ body {
 .i-3d-flag { height: 200px }
 
 .i-bg-black { background-color: #383838 }
+.i-bg-real-black { background-color: #000 }
 
 .i-button { 
   background-color: rgba(0, 0, 0, 0.5);
@@ -52,9 +50,18 @@ body {
   margin-right: 0.5rem;
 }
 
-.i-nav-hover:hover { background-color: #464646 }
+.i-nav-bg-dark { background-color: #464646 }
 
 .i-nav-logo { height: 12px }
+
+.i-serif { font-family: 'Libre Baskerville', serif }
+.i-sans-serif { font-family: 'Montserrat', sans-serif }
+
+.i-text-grey { color: #9c9c9c }
+.i-text-grey-light { color: #eaeaea }
+.i-text-grey-darker { color: #545454 }
+
+.i-tracking-2wide { letter-spacing: 0.1em }
 
 .i-triangle-down { height: 40px }
 
