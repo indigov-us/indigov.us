@@ -5,6 +5,7 @@ module.exports = {
     author: `@indigov`,
   },
   plugins: [
+    'gatsby-plugin-react-svg',
     'gatsby-plugin-postcss',
     `gatsby-plugin-react-helmet`,
     {
