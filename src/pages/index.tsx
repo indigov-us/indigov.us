@@ -2,12 +2,18 @@ import { useStaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 import React from 'react'
 
+import Accordion from '../components/accordion'
 import Layout from '../components/layout'
 
+// @ts-ignore
 import OpenTableLogo from '../images/logo-opentable.svg'
+// @ts-ignore
 import ShopifyLogo from '../images/logo-shopify.svg'
+// @ts-ignore
 import SlackLogo from '../images/logo-slack.svg'
+// @ts-ignore
 import UberLogo from '../images/logo-uber.svg'
+// @ts-ignore
 import VenmoLogo from '../images/logo-venmo.svg'
 
 const IndexPage = () => {
@@ -22,6 +28,14 @@ const IndexPage = () => {
       }
 
       devicesImage: file(relativePath: { eq: "devices.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 1600) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+
+      exampleWebsiteImage: file(relativePath: { eq: "example-website.png" }) {
         childImageSharp {
           fluid(maxWidth: 1600) {
             ...GatsbyImageSharpFluid
@@ -70,54 +84,20 @@ const IndexPage = () => {
         <div className='md:grid grid-cols-2'>
           <div className='self-center' style={{ maxWidth: 500, justifySelf: 'end' }}>
             <h2>Never Miss a Message</h2>
-
-            {(() => {
-              const renderRow = ({ idx, title, body }: { idx: string; title: string; body: string }) => (
-                <div>
-                  <div className='flex'>
-                    <div>{idx}</div>
-                    <div>{title}</div>
-                  </div>
-                  <div>{body}</div>
-                </div>
-              )
-
-              return (
-                <div>
-                  {renderRow({
-                    idx: '01',
-                    title: 'Web and mobile app',
-                    body:
-                      'Manage cases and correspondence in the field with an award-winning downloadable mobile app that ensures you always have access to the functionalty you need.',
-                  })}
-                  {renderRow({
-                    idx: '02',
-                    title: 'Smart automation',
-                    body: '',
-                  })}
-                  {renderRow({
-                    idx: '03',
-                    title: 'Real time analytics',
-                    body: '',
-                  })}
-                  {renderRow({
-                    idx: '04',
-                    title: 'Multi-channel integration',
-                    body: '',
-                  })}
-                  {renderRow({
-                    idx: '05',
-                    title: 'Smart tagging',
-                    body: '',
-                  })}
-                  {renderRow({
-                    idx: '04',
-                    title: 'Best in class security',
-                    body: '',
-                  })}
-                </div>
-              )
-            })()}
+            <Accordion
+              items={[
+                {
+                  title: 'Web and mobile app',
+                  body:
+                    'Manage cases and correspondence in the field with an award-winning downloadable mobile app that ensures you always have access to the functionalty you need.',
+                },
+                { title: 'Smart automation', body: '' },
+                { title: 'Real time analytics', body: '' },
+                { title: 'Multi-channel integration', body: '' },
+                { title: 'Smart tagging', body: '' },
+                { title: 'Best in class security', body: '' },
+              ]}
+            />
           </div>
 
           <div>
@@ -136,6 +116,29 @@ const IndexPage = () => {
               <UberLogo />
             </div>
           </div>
+        </div>
+      </div>
+
+      <div className='md:grid grid-cols-2'>
+        <div>
+          <Img fluid={data.exampleWebsiteImage.childImageSharp.fluid} />
+        </div>
+        <div className='self-center' style={{ maxWidth: 500 }}>
+          <h2>Not just a website</h2>
+          <Accordion
+            items={[
+              {
+                title: 'Constituent first',
+                body:
+                  'Manage cases and correspondence in the field with an award-winning downloadable mobile app that ensures you always have access to the functionalty you need.',
+              },
+              { title: 'Interactive service menu', body: '' },
+              { title: 'Knowledge portal', body: '' },
+              { title: 'Full site control', body: '' },
+              { title: 'Make a connection', body: '' },
+              { title: 'Best in class security', body: '' },
+            ]}
+          />
         </div>
       </div>
     </Layout>
