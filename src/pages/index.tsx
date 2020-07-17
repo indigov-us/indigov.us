@@ -42,6 +42,14 @@ const IndexPage = () => {
           }
         }
       }
+
+      bennyboyImage: file(relativePath: { eq: "bennyboy.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 1600) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
     }
   `)
 
@@ -140,6 +148,20 @@ const IndexPage = () => {
             ]}
           />
         </div>
+      </div>
+
+      <div className='md:grid grid-cols-3' style={{ background: 'linear-gradient(180deg, #F8F8F8 0%, #FFFFFF 100%)' }}>
+        <div>
+          <Img fluid={data.bennyboyImage.childImageSharp.fluid} />
+        </div>
+
+        <div className='text-center self-center'>
+          <div>What staffers are saying</div>
+          <div>“For the ﬁrst time I feel like I have full insight into our mail and casework systems - I get custom reports delivered to me daily!”</div>
+          <div>Name title</div>
+        </div>
+
+        <div>&nbsp;</div>
       </div>
     </Layout>
   )

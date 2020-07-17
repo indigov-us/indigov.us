@@ -7,6 +7,7 @@ module.exports = {
       'jacksons-purple': '##281F7E',
       periwinkle: '#CDC8FF',
       portage: '#907BEF',
+      'silver-chalice': '#a4a4a4',
       'white-lilac': '#EAE9F7',
       white: '#fff',
     },
