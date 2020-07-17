@@ -19,7 +19,7 @@ import VenmoLogo from '../images/logo-venmo.svg'
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
     query {
-      marbleImage: file(relativePath: { eq: "marble.png" }) {
+      marbleImage: file(relativePath: { eq: "marble.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 2400) {
             ...GatsbyImageSharpFluid
@@ -61,9 +61,9 @@ const IndexPage = () => {
         </div>
 
         <div className='relative text-white text-center' style={{ maxWidth: 716 }}>
-          <h2>A next generation constituent experience management platform designed for government</h2>
+          <h2 className='montserrat text-3xl font-bold leading-tight mb-6'>A next generation constituent experience management platform designed for government</h2>
           <div>
-            <button className='uppercase text-governor-bay' style={{ backgroundColor: '#E0E0E0' }}>
+            <button className='py-2 px-4 tracking-widest font-bold uppercase text-governor-bay text-sm' style={{ backgroundColor: '#E0E0E0' }}>
               Request a demo
             </button>
           </div>
