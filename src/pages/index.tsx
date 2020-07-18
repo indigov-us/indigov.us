@@ -4,9 +4,10 @@ import React from 'react'
 
 import Accordion from '../components/accordion'
 import Layout from '../components/layout'
+import { requestADemoHref } from '../components/header'
+
 // @ts-ignore
 import Clock from '../images/clock.svg'
-
 // @ts-ignore
 import OpenTableLogo from '../images/logo-opentable.svg'
 // @ts-ignore
@@ -67,9 +68,14 @@ const IndexPage = () => {
             A next generation constituent experience management platform designed for government
           </h2>
           <div>
-            <button className='montserrat py-3 px-6 tracking-widest font-bold uppercase text-governor-bay text-sm' style={{ backgroundColor: '#E0E0E0' }}>
+            <a
+              href={requestADemoHref}
+              target='_blank'
+              className='inline-block montserrat py-3 px-6 tracking-widest font-bold uppercase text-governor-bay text-sm'
+              style={{ backgroundColor: '#E0E0E0' }}
+            >
               Request a demo
-            </button>
+            </a>
           </div>
         </div>
       </div>
@@ -127,26 +133,28 @@ const IndexPage = () => {
           </div>
         </div>
 
-        <div className='container flex md:justify-center'>
+        <div className='container flex md:justify-center mt-10 pb-20'>
           <div>
-            <div>Powered by software that powers</div>
+            <div className='montserrat uppercase font-bold tracking-widest mb-6' style={{ color: '#6D7278' }}>
+              Powered by software that powers
+            </div>
             <div className='flex flex-col md:flex-row md:items-center'>
-              <ShopifyLogo />
-              <VenmoLogo />
-              <SlackLogo />
-              <OpenTableLogo />
-              <UberLogo />
+              <ShopifyLogo className='mr-8' />
+              <VenmoLogo className='mr-8' />
+              <SlackLogo className='mr-8' />
+              <OpenTableLogo className='mr-8' />
+              <UberLogo className='mr-8' />
             </div>
           </div>
         </div>
       </div>
 
-      <div className='md:grid grid-cols-2'>
+      <div className='md:grid grid-cols-2 my-16'>
         <div>
           <Img fluid={data.exampleWebsiteImage.childImageSharp.fluid} />
         </div>
         <div className='self-center' style={{ maxWidth: 500 }}>
-          <h2>Not just a website</h2>
+          <h2 className='tiempos-headline text-4xl leading-tight mb-6'>Not just a website</h2>
           <Accordion
             items={[
               {
@@ -165,14 +173,16 @@ const IndexPage = () => {
       </div>
 
       <div className='md:grid grid-cols-3' style={{ background: 'linear-gradient(180deg, #F8F8F8 0%, #FFFFFF 100%)' }}>
-        <div>
-          <Img fluid={data.bennyboyImage.childImageSharp.fluid} />
+        <div className='self-end'>
+          <Img fluid={data.bennyboyImage.childImageSharp.fluid} style={{ maxWidth: 357 }} />
         </div>
 
-        <div className='text-center self-center'>
-          <div>What staffers are saying</div>
-          <div>“For the ﬁrst time I feel like I have full insight into our mail and casework systems - I get custom reports delivered to me daily!”</div>
-          <div>Name title</div>
+        <div className='text-center self-center my-20'>
+          <div className='montserrat uppercase tracking-widest text-xl'>What staffers are saying</div>
+          <div className='mt-8 mb-5 tiempos-headline text-4xl leading-tight font-light'>
+            &ldquo;For the ﬁrst time I feel like I have full insight into our mail and casework systems - I get custom reports delivered to me daily!&rdquo;
+          </div>
+          <div className='montserrat uppercase tracking-widest text-md'>Name title</div>
         </div>
 
         <div>&nbsp;</div>

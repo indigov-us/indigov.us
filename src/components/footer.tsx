@@ -17,15 +17,15 @@ const Footer = () => {
 
   return (
     <footer style={{ backgroundColor: '#171717', color: '#fff' }}>
-      <div className='container'>
-        <hr />
+      <div className='container my-12'>
+        <hr className='mt-16 mb-6' style={{ borderColor: '#fff' }} />
         <div className='md:grid grid-cols-3'>
           <div>
             <Img fixed={data.logoImage.childImageSharp.fixed} />
-            <div className='text-silver-chalice'>We are a group of technologists working to bridge the gap between Silicon Valley and government</div>
+            <div className='mt-6 text-silver-chalice leading-snug'>We are a group of technologists working to bridge the gap between Silicon Valley and government</div>
           </div>
-          <div>center</div>
-          <div>right</div>
+          <div></div>
+          <div></div>
         </div>
       </div>
     </footer>
