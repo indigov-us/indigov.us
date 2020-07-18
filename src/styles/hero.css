@@ -1,0 +1,9 @@
+.ig-hero {
+  height: 500px;
+}
+
+@screen md {
+  .ig-hero {
+    height: 790px;
+  }
+}
