@@ -63,7 +63,9 @@ const IndexPage = () => {
         </div>
 
         <div className='relative text-white text-center' style={{ maxWidth: 716 }}>
-          <h2 className='montserrat text-4xl font-bold leading-tight mb-12'>A next generation constituent experience management platform designed for government</h2>
+          <h2 className='montserrat text-4xl font-bold leading-tight mb-12' style={{ color: '#e0e0e0' }}>
+            A next generation constituent experience management platform designed for government
+          </h2>
           <div>
             <button className='montserrat py-3 px-6 tracking-widest font-bold uppercase text-governor-bay text-sm' style={{ backgroundColor: '#E0E0E0' }}>
               Request a demo
@@ -101,9 +103,9 @@ const IndexPage = () => {
       </div>
 
       <div style={{ background: 'linear-gradient(180deg, #F9F9F9 0%, #FFFFFF 24.64%, #FFFFFF 47.56%, #FFFFFF 79.64%, #F8F8F8 100%)' }}>
-        <div className='md:grid grid-cols-2'>
+        <div className='md:grid grid-cols-2 py-12'>
           <div className='self-center' style={{ maxWidth: 500, justifySelf: 'end' }}>
-            <h2>Never Miss a Message</h2>
+            <h2 className='tiempos-headline text-4xl leading-tight mb-6'>Never Miss a Message</h2>
             <Accordion
               items={[
                 {
