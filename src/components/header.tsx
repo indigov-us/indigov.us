@@ -5,7 +5,7 @@ import React from 'react'
 import Logo from '../images/logo.svg'
 
 const Header = () => (
-  <header className='container'>
+  <header className='container py-10'>
     <div className='grid grid-cols-2'>
       <div>
         <Link to='/'>
@@ -13,7 +13,7 @@ const Header = () => (
         </Link>
       </div>
       <div className='text-right'>
-        <Link className='bg-governor-bay text-white uppercase' to='/'>
+        <Link className='px-5 py-3 tracking-widest text-xs bg-governor-bay text-white uppercase font-bold' to='/'>
           Request a demo
         </Link>
       </div>

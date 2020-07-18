@@ -55,15 +55,15 @@ const IndexPage = () => {
 
   return (
     <Layout>
-      <div className='flex items-center justify-center relative overflow-hidden' style={{ height: '40vh' }}>
-        <div className='absolute w-full'>
-          <Img fluid={data.marbleImage.childImageSharp.fluid} />
+      <div className='flex items-center justify-center relative overflow-hidden' style={{ height: 790 }}>
+        <div className='absolute w-full h-full'>
+          <Img className='h-full' fluid={data.marbleImage.childImageSharp.fluid} />
         </div>
 
         <div className='relative text-white text-center' style={{ maxWidth: 716 }}>
-          <h2 className='montserrat text-3xl font-bold leading-tight mb-6'>A next generation constituent experience management platform designed for government</h2>
+          <h2 className='montserrat text-4xl font-bold leading-tight mb-12'>A next generation constituent experience management platform designed for government</h2>
           <div>
-            <button className='py-2 px-4 tracking-widest font-bold uppercase text-governor-bay text-sm' style={{ backgroundColor: '#E0E0E0' }}>
+            <button className='montserrat py-3 px-6 tracking-widest font-bold uppercase text-governor-bay text-sm' style={{ backgroundColor: '#E0E0E0' }}>
               Request a demo
             </button>
           </div>
