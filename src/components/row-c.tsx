@@ -28,13 +28,29 @@ export default () => {
           items={[
             {
               title: 'Constituent first',
-              body: 'Manage cases and correspondence in the field with an award-winning downloadable mobile app that ensures you always have access to the functionalty you need.',
+              body:
+                'A supporter is won or lost in every constituent interaction. Indigov websites are designed with the constituent in sharp focus so they can get what they need when they need it',
             },
-            { title: 'Interactive service menu', body: '' },
-            { title: 'Knowledge portal', body: '' },
-            { title: 'Full site control', body: '' },
-            { title: 'Make a connection', body: '' },
-            { title: 'Best in class security', body: '' },
+            {
+              title: 'Interactive service menu',
+              body: 'Provide constituents a real-time menu where they can go to be educated on then access the array of services that your office provides.',
+            },
+            {
+              title: 'Knowledge portal',
+              body: 'Turn your website into an easy to navigate portal of key resources and help articles that can answer constituent questions before they even have to ask them.',
+            },
+            {
+              title: 'Full site control',
+              body: 'Power your site with a best in class CMS (content management system) to update all site pages, add new content, images, audio, video and more!',
+            },
+            {
+              title: 'Make a connection',
+              body: 'Don’t just answer a question, build a meaningful empathetic relationship with a constituent through amazing service and a beautifully articulated brand.',
+            },
+            {
+              title: 'Best in class security',
+              body: 'Our security experts and threat monitoring tools are testing and monitoring your site 24 hours day to ensure that your office is protected at all times.',
+            },
           ]}
         />
       </div>

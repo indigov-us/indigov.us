@@ -36,15 +36,35 @@ export default () => {
           <Accordion
             items={[
               {
-                title: 'Web and mobile app',
+                title: 'Smart Automations',
                 body:
-                  'Manage cases and correspondence in the field with an award-winning downloadable mobile app that ensures you always have access to the functionalty you need.',
+                  'Reduce average response time from weeks and months to minutes by leveraging the same workflows and automation tech used by companies like AirBnb, Uber and Slack.',
               },
-              { title: 'Smart automation', body: '' },
-              { title: 'Real time analytics', body: '' },
-              { title: 'Multi-channel integration', body: '' },
-              { title: 'Smart tagging', body: '' },
-              { title: 'Best in class security', body: '' },
+              {
+                title: 'Optimized workflows',
+                body:
+                  'Designed for situations where every second costs money and reputation, all workflows have been optimized for minimal effort and maximum constituent responsiveness.',
+              },
+              {
+                title: 'Multi-channel Integration',
+                body:
+                  'Seamlessly integrate every channel of communication into sorted smart inboxes for easy management: website, CWC, scanned mail, facebook, twitter AND phone calls.',
+              },
+              {
+                title: 'Smart tagging',
+                body:
+                  'Learn and track more about your constituents than ever before with an intelligent tagging system that keeps your data clean, useful and available dynamically.',
+              },
+              {
+                title: 'Best in class security',
+                body:
+                  'Leveraging encryption and security standards trusted by over 120,000 companies, federal and state government agencies including as the FCC, the EPA, and the GSA.',
+              },
+              {
+                title: 'Web & Mobile App',
+                body:
+                  'Manage cases and correspondence in the field with an award-winning downloadable mobile app that ensures you always have access to the functionality you need.',
+              },
             ]}
           />
         </div>

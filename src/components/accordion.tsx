@@ -10,7 +10,7 @@ export default ({ items }: { items: { title: string; body: string }[] }) => {
     <div>
       {items.map(({ title, body }, idx) => (
         <div key={idx}>
-          <div className='grid grid-cols-8 mb-2 items-center' onClick={() => setActiveIdx(idx)}>
+          <div className='grid grid-cols-8 mb-2 items-center cursor-pointer' onClick={() => setActiveIdx(idx)}>
             <div className={classNames('montserrat text-sm col-span-1', idx === activeIdx ? 'text-governor-bay' : 'text-silver-chalice')}>{idx < 10 ? `0${idx + 1}` : idx + 1}</div>
             <div className={classNames('montserrat col-span-7 uppercase tracking-wider', idx === activeIdx ? 'font-bold text-governor-bay' : 'text-silver-chalice')}>{title}</div>
           </div>
