@@ -17,19 +17,17 @@ export default () => {
 
   return (
     <div className='md:grid grid-cols-3' style={{ background: 'linear-gradient(180deg, #F8F8F8 0%, #FFFFFF 100%)' }}>
-      <div className='self-end'>
+      <div className='self-end hidden md:block pt-20'>
         <Img fluid={data.bennyboyImage.childImageSharp.fluid} style={{ maxWidth: 357 }} />
       </div>
 
-      <div className='text-center self-center my-20'>
+      <div className='text-center self-center py-10 mx-6 col-span-2 lg:col-span-1'>
         <div className='montserrat uppercase tracking-widest text-xl'>What staffers are saying</div>
-        <div className='mt-8 mb-5 tiempos-headline text-4xl leading-tight font-light'>
+        <div className='mt-8 mb-5 tiempos-headline text-2xl lg:text-4xl leading-tight font-light'>
           &ldquo;For the ﬁrst time I feel like I have full insight into our mail and casework systems - I get custom reports delivered to me daily!&rdquo;
         </div>
         <div className='montserrat uppercase tracking-widest text-md'>Name title</div>
       </div>
-
-      <div>&nbsp;</div>
     </div>
   )
 }

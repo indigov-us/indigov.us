@@ -30,8 +30,8 @@ export default () => {
 
   return (
     <div style={{ background: 'linear-gradient(180deg, #F9F9F9 0%, #FFFFFF 24.64%, #FFFFFF 47.56%, #FFFFFF 79.64%, #F8F8F8 100%)' }}>
-      <div className='md:grid grid-cols-2 py-12'>
-        <div className='self-center' style={{ maxWidth: 500, justifySelf: 'end' }}>
+      <div className='md:grid grid-cols-2 col-gap-8 pt-12 mb-12 mx-6 items-center'>
+        <div className='self-center mb-10' style={{ maxWidth: 500, justifySelf: 'end' }}>
           <h2 className='tiempos-headline text-4xl leading-tight mb-6'>Never Miss a Message</h2>
           <Accordion
             items={[
@@ -60,11 +60,11 @@ export default () => {
             Powered by software that powers
           </div>
           <div className='flex flex-col md:flex-row md:items-center'>
-            <ShopifyLogo className='mr-8' />
-            <VenmoLogo className='mr-8' />
-            <SlackLogo className='mr-8' />
-            <OpenTableLogo className='mr-8' />
-            <UberLogo className='mr-8' />
+            <ShopifyLogo className='mr-8 mb-6' />
+            <VenmoLogo className='mr-8 mb-6' />
+            <SlackLogo className='mr-8 mb-6' />
+            <OpenTableLogo className='mr-8 mb-6' />
+            <UberLogo className='mr-8 mb-6' />
           </div>
         </div>
       </div>

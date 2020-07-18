@@ -18,7 +18,7 @@ export default () => {
   `)
 
   return (
-    <div className='md:grid grid-cols-2 my-16'>
+    <div className='md:grid grid-cols-2 col-gap-12 my-16 items-center'>
       <div>
         <Img fluid={data.exampleWebsiteImage.childImageSharp.fluid} />
       </div>

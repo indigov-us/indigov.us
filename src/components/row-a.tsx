@@ -5,10 +5,10 @@ import Clock from '../images/clock.svg'
 
 export default () => {
   return (
-    <div className='md:grid md:grid-cols-2 py-12'>
+    <div className='md:grid md:grid-cols-2 col-gap-12 mx-6 md:mx-12 py-12'>
       <div style={{ maxWidth: 500, justifySelf: 'end' }}>
         <h2 className='tiempos-headline text-4xl leading-tight mb-6'>Reduce your response time from weeks to hours</h2>
-        <div className='text-lg'>
+        <div className='text-lg leading-relaxed mb-10'>
           Over the past 15 years government officials have seen an explosion in volume of incoming requests. New digital channels, new expectations and a changing relationship with
           those they serve has made it difficult to keep pace. Indigov was built to alleviate this increasing burden and help our democracy scale better.
         </div>
