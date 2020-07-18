@@ -22,7 +22,7 @@ export default () => {
       <div>
         <Img fluid={data.exampleWebsiteImage.childImageSharp.fluid} />
       </div>
-      <div className='self-center' style={{ maxWidth: 500 }}>
+      <div className='self-center ml-8' style={{ maxWidth: 500 }}>
         <h2 className='tiempos-headline text-4xl leading-tight mb-6'>Not just a website</h2>
         <Accordion
           items={[

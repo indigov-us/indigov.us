@@ -74,17 +74,17 @@ export default () => {
         </div>
       </div>
 
-      <div className='container flex md:justify-center mt-10 pb-20'>
+      <div className='container flex justify-center md:justify-start mt-10 pb-20'>
         <div>
-          <div className='montserrat uppercase font-bold tracking-widest mb-6' style={{ color: '#6D7278' }}>
+          <div className='montserrat uppercase font-bold tracking-widest mb-10 text-center md:text-left' style={{ color: '#6D7278' }}>
             Powered by software that powers
           </div>
-          <div className='flex flex-col md:flex-row md:items-center'>
-            <ShopifyLogo className='mr-8 mb-6' />
-            <VenmoLogo className='mr-8 mb-6' />
-            <SlackLogo className='mr-8 mb-6' />
-            <OpenTableLogo className='mr-8 mb-6' />
-            <UberLogo className='mr-8 mb-6' />
+          <div className='flex flex-col md:flex-row items-center'>
+            <ShopifyLogo className='md:mr-8 mb-8' />
+            <VenmoLogo className='md:mr-8 mb-8' />
+            <SlackLogo className='md:mr-8 mb-8' />
+            <OpenTableLogo className='md:mr-8 mb-8' />
+            <UberLogo className='md:mr-8 mb-8' />
           </div>
         </div>
       </div>
