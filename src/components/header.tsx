@@ -15,9 +15,12 @@ const Header = () => (
         </Link>
 
         <div className='mt-4 md:mt-0 hidden md:flex items-center -mx-6'>
-          <Link className='px-6 montserrat uppercase tracking-widest text-sm' to='/about'>
-            About
-          </Link>
+          <div className='px-6'>
+            <Link className='montserrat uppercase tracking-widest text-sm' to='/about' activeClassName='font-bold border-b-2'>
+              About
+            </Link>
+          </div>
+
           <div className='px-6'>
             <a className='inline-block px-5 py-3 tracking-widest text-xs bg-governor-bay text-white uppercase font-bold' href={requestADemoHref} target='_blank'>
               Request a demo

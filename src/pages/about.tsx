@@ -46,7 +46,7 @@ export default () => {
 
         <div className='border-solid border-l-2 pl-10 my-12 uppercase montserrat font-medium text-xl pr-10 tracking-widest'>An operating system for representative democracy.</div>
 
-        <div className='text-xl leading-loose'>
+        <div className='text-xl leading-loose' style={{ color: '#575757' }}>
           <div className='my-10'>
             There are <b>570k elected officials in the US that receive over 5.1b constituent messages per year</b>…the core of the democratic user experience in America. The vast
             majority of reps and staffers use self-hosted antiquated legacy tools built decades ago or simple email to manage it all. As a result the average constituent response
