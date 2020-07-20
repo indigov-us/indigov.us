@@ -16,6 +16,12 @@ const Header = () => (
 
         <div className='mt-4 md:mt-0 hidden md:flex items-center -mx-6'>
           <div className='px-6'>
+            <Link className='montserrat uppercase tracking-widest text-sm' to='/#products' activeClassName='font-bold border-b-2'>
+              Products
+            </Link>
+          </div>
+
+          <div className='px-6'>
             <Link className='montserrat uppercase tracking-widest text-sm' to='/about' activeClassName='font-bold border-b-2'>
               About
             </Link>

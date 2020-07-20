@@ -64,7 +64,7 @@ export default () => {
         </div>
 
         <hr className='my-8' style={{ borderColor: '#979797', width: 164 }} />
-        <Logo style={{ fill: 'red' }} />
+        <Logo />
       </div>
     </Layout>
   )
