@@ -48,7 +48,7 @@ export default () => {
     },
     {
       quote:
-        'Since our staff has full remote access to all constituent messages, we’ve been able to operate no interruption during the COVID crisis. Many of our colleague offices have gone dark. It’s been a game changer.',
+        'Since our staff has full remote access to all constituent messages, we’ve been able to operate with no interruption during the COVID crisis. Many of our colleague offices have gone dark. It’s been a game changer.',
       author: 'Chief of Staff',
     },
     {

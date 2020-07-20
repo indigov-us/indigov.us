@@ -29,11 +29,11 @@ export default () => {
             {
               title: 'Constituent first',
               body:
-                'A supporter is won or lost in every constituent interaction. Indigov websites are designed with the constituent in sharp focus so they can get what they need when they need it',
+                'A supporter is won or lost in every constituent interaction. Indigov websites are designed with the constituent in sharp focus so they can get what they need when they need it.',
             },
             {
               title: 'Interactive service menu',
-              body: 'Provide constituents a real-time menu where they can go to be educated on then access the array of services that your office provides.',
+              body: 'Provide constituents a real-time menu where they can go to be educated and then access the array of services that your office provides.',
             },
             {
               title: 'Knowledge portal',
@@ -49,7 +49,7 @@ export default () => {
             },
             {
               title: 'Best in class security',
-              body: 'Our security experts and threat monitoring tools are testing and monitoring your site 24 hours day to ensure that your office is protected at all times.',
+              body: 'Our security experts and threat monitoring tools are testing and monitoring your site 24 hours a day to ensure that your office is protected at all times.',
             },
           ]}
         />

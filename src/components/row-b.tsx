@@ -38,7 +38,7 @@ export default () => {
               {
                 title: 'Smart Automations',
                 body:
-                  'Reduce average response time from weeks and months to minutes by leveraging the same workflows and automation tech used by companies like AirBnb, Uber and Slack.',
+                  'Reduce average response time from weeks and months to minutes by leveraging the same workflows and automation tech used by companies like Airbnb, Uber and Slack.',
               },
               {
                 title: 'Optimized workflows',
@@ -48,7 +48,7 @@ export default () => {
               {
                 title: 'Multi-channel Integration',
                 body:
-                  'Seamlessly integrate every channel of communication into sorted smart inboxes for easy management: website, CWC, scanned mail, facebook, twitter AND phone calls.',
+                  'Seamlessly integrate every channel of communication into sorted smart inboxes for easy management: website, CWC, scanned mail, Facebook, Twitter AND phone calls.',
               },
               {
                 title: 'Smart tagging',
@@ -58,7 +58,7 @@ export default () => {
               {
                 title: 'Best in class security',
                 body:
-                  'Leveraging encryption and security standards trusted by over 120,000 companies, federal and state government agencies including as the FCC, the EPA, and the GSA.',
+                  'Leveraging encryption and security standards trusted by over 120,000 companies, federal and state government agencies including the FCC, the EPA, and the GSA.',
               },
               {
                 title: 'Web & Mobile App',
