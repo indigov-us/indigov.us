@@ -9,7 +9,7 @@ export default () => {
     query {
       marbleImage: file(relativePath: { eq: "marble.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 2400) {
+          fluid(maxWidth: 3200) {
             ...GatsbyImageSharpFluid
           }
         }
