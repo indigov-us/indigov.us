@@ -75,16 +75,16 @@ export default () => {
       </div>
 
       <div className='container flex justify-center md:justify-start mt-10 pb-20'>
-        <div>
+        <div className='overflow-x-scroll'>
           <div className='montserrat uppercase font-bold tracking-widest mb-10 text-center md:text-left' style={{ color: '#6D7278' }}>
             Powered by software that powers
           </div>
           <div className='flex flex-col md:flex-row items-center'>
-            <ShopifyLogo className='md:mr-8 mb-8' />
-            <VenmoLogo className='md:mr-8 mb-8' />
-            <SlackLogo className='md:mr-8 mb-8' />
-            <OpenTableLogo className='md:mr-8 mb-8' />
-            <UberLogo className='md:mr-8 mb-8' />
+            <ShopifyLogo className='md:mr-8 lg:mr-10 mb-8' />
+            <VenmoLogo className='md:mr-8 lg:mr-10 mb-8' />
+            <SlackLogo className='md:mr-8 lg:mr-10 mb-8' />
+            <OpenTableLogo className='md:mr-8 lg:mr-10 mb-8' />
+            <UberLogo className='md:mr-8 lg:mr-10 mb-8' />
           </div>
         </div>
       </div>
