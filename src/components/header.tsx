@@ -14,10 +14,15 @@ const Header = () => (
           <Logo />
         </Link>
 
-        <div className='mt-4 md:mt-0 hidden md:block'>
-          <a className='inline-block px-5 py-3 tracking-widest text-xs bg-governor-bay text-white uppercase font-bold' href={requestADemoHref} target='_blank'>
-            Request a demo
-          </a>
+        <div className='mt-4 md:mt-0 hidden md:flex items-center -mx-6'>
+          <Link className='px-6 montserrat uppercase tracking-widest text-sm' to='/about'>
+            About
+          </Link>
+          <div className='px-6'>
+            <a className='inline-block px-5 py-3 tracking-widest text-xs bg-governor-bay text-white uppercase font-bold' href={requestADemoHref} target='_blank'>
+              Request a demo
+            </a>
+          </div>
         </div>
       </div>
     </div>
