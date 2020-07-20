@@ -1,0 +1,10 @@
+.ig-about .ig-abe {
+  left: -100px;
+  width: 320px;
+}
+
+@screen lg {
+  .ig-about .ig-abe {
+    left: 50px;
+  }
+}
