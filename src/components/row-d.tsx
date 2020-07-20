@@ -72,12 +72,12 @@ export default () => {
   const onCarouselChange = (value) => setCarouselValue(value)
 
   return (
-    <div className='md:grid grid-cols-8' style={{ background: 'linear-gradient(180deg, #F8F8F8 0%, #FFFFFF 100%)' }}>
-      <div className='self-end hidden md:block pt-20 col-span-2'>
+    <div className='ig-row-d relative' style={{ background: 'linear-gradient(180deg, #F8F8F8 0%, #FFFFFF 100%)' }}>
+      <div className='ig-bennyboy absolute bottom-0 hidden md:block'>
         <Img fluid={data.bennyboyImage.childImageSharp.fluid} style={{ maxWidth: 357 }} />
       </div>
 
-      <div className='text-center self-center py-10 mx-6 col-span-6 md:px-10 lg:px-20'>
+      <div className='text-center self-center py-10 mx-auto col-span-6 px-10 md:px-20' style={{ maxWidth: 800 }}>
         <div className='montserrat uppercase tracking-widest text-xl'>What staffers are saying</div>
 
         <Carousel className='mb-10' plugins={['infinite']} value={carouselValue} onChange={onCarouselChange}>

@@ -1,0 +1,9 @@
+.ig-row-d .ig-bennyboy {
+  width: 220px;
+}
+
+@screen lg {
+  .ig-row-d .ig-bennyboy {
+    width: 357px;
+  }
+}
