@@ -3,6 +3,8 @@ import { useStaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 
 import { requestADemoHref } from './header'
+// @ts-ignore
+import DownArrow from '../images/down-arrow.svg'
 
 export default () => {
   const data = useStaticQuery(graphql`
@@ -37,6 +39,11 @@ export default () => {
             Request a demo
           </a>
         </div>
+      </div>
+
+      <div className='absolute bottom-0 flex items-center flex-col mb-4 md:mb-8'>
+        <div className='text-white uppercase montserrat text-xs tracking-wider'>learn more</div>
+        <DownArrow />
       </div>
     </div>
   )
