@@ -49,7 +49,7 @@ export default () => {
         </div>
 
         <div className='mx-auto px-8 my-16' style={{ maxWidth: 584 }}>
-          <div className='tiempos-headline text-4xl leading-tight mb-10'>Our Ralling Cry</div>
+          <div className='tiempos-headline text-4xl leading-tight mb-10'>Our Rallying Cry</div>
 
           <div className='text-xl leading-loose'>
             Right now, all around the world democracy is in retreat. Autocratic governments are investing heavily in tech to{' '}
