@@ -8,8 +8,6 @@ import MarbleImage from '../components/marble-image'
 // @ts-ignore
 import Logo from '../images/logo.svg'
 
-const legacySupportSigninLink = "https://indigov.zendesk.com/access/normal"
-
 export default () => {
   const data = useStaticQuery(graphql`
     query {
@@ -39,19 +37,13 @@ export default () => {
         <div className='mx-auto px-8 my-16' style={{maxWidth: 584}}>
           <div className='text-xl leading-loose text-center' style={{color: '#575757'}}>
             <div className='my-10'>
-              You can sign in to the help center by clicking the <b>"Ask Abe"</b> application in the
-              top right of your Indigov application.
-
+              <p>Thanks for stopping by!</p>
+              <p>If you need help from Indigov, click the <b>Ask Abe</b> app.</p>
               <div className={"p-5 flex justify-center"}>
                 <div style={{ width: '300px'}}>
                   <Img fluid={data.askAbeImage.childImageSharp.fluid} style={{maxWidth:'300px'}} />
                 </div>
               </div>
-            </div>
-            <div className='my-10'>
-              <a className='inline-block px-5 py-3 tracking-widest text-xs bg-governor-bay text-white uppercase font-bold' href={legacySupportSigninLink} target='_blank'>
-                Sign in to Help Center
-              </a>
             </div>
           </div>
         </div>
