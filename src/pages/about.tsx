@@ -96,7 +96,7 @@ export default () => {
               Click the link below to view open positions and apply.
             </div>
             <a
-              href='https://angel.co/company/indigov-1/jobs'
+              href='https://jobs.lever.co/indigov'
               target='_blank'
               className='inline-block border-governor-bay border-solid border rounded-full text-sm px-12 py-6 mb-6 montserrat font-bold tracking-widest text-governor-bay uppercase'
               style={{ boxShadow: '0px 0px 12px rgba(0, 0, 0, 0.123798)' }}
