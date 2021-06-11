@@ -25,7 +25,9 @@ const Footer = () => {
             <div className='mt-6 text-silver-chalice leading-snug'>We are a group of technologists working to bridge the gap between Silicon Valley and government</div>
           </div>
           <div></div>
-          <div></div>
+          <div className='md:text-right my-6 md:my-0'>
+            <a href='mailto:press@indigov.us'>Press Inquiries</a>
+          </div>
         </div>
       </div>
     </footer>
