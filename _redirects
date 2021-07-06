@@ -1,2 +1,0 @@
-# https://docs.netlify.com/routing/redirects/redirect-options/#domain-level-redirects
-https://indigov.us/* https://indigov.com/:splat 301!
