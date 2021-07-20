@@ -5,6 +5,7 @@ import React from 'react'
 import Logo from '../images/logo.svg'
 
 export const requestADemoHref = 'mailto:contact@indigov.us'
+export const careersHref = 'https://jobs.lever.co/indigov'
 
 const Header = () => (
   <header className='sticky top-0 py-8 bg-white w-full z-10'>
@@ -25,6 +26,12 @@ const Header = () => (
             <Link className='montserrat uppercase tracking-widest text-sm' to='/about' activeClassName='font-bold border-b-2'>
               About
             </Link>
+          </div>
+
+          <div className='px-6'>
+            <a className='montserrat uppercase tracking-widest text-sm' href={careersHref}>
+              Careers
+            </a>
           </div>
 
           <div className='px-6'>
