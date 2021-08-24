@@ -4,7 +4,7 @@ import React from 'react'
 // @ts-ignore
 import Logo from '../images/logo.svg'
 
-export const requestADemoHref = 'mailto:contact@indigov.us'
+export const requestADemoHref = 'mailto:contact@indigov.com'
 export const careersHref = 'https://jobs.lever.co/indigov'
 
 const Header = () => (

@@ -26,7 +26,7 @@ const Footer = () => {
           </div>
           <div></div>
           <div className='md:text-right my-6 md:my-0'>
-            <a href='mailto:press@indigov.us'>Press Inquiries</a>
+            <a href='mailto:press@indigov.com'>Press Inquiries</a>
           </div>
         </div>
       </div>
