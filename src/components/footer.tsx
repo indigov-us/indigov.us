@@ -23,6 +23,7 @@ const Footer = () => {
           <div>
             <Img fixed={data.logoImage.childImageSharp.fixed} />
             <div className='mt-6 text-silver-chalice leading-snug'>We are a group of technologists working to bridge the gap between Silicon Valley and government</div>
+            <div className='mt-4 text-silver-chalice'>80 M St SE Washington, DC 20003</div>
           </div>
           <div></div>
           <div className='md:text-right my-6 md:my-0'>
