@@ -4,7 +4,7 @@ import Layout from '../components/layout'
 
 export default () => (
   <Layout>
-    <div className='mx-auto px-8' style={{ maxWidth: 600 }}>
+    <div className='mx-auto pb-10 px-8' style={{ maxWidth: 600 }}>
       <div className='text-xl mt-6'>Cookie Policy</div>
       <p>Updated at 2021-11-23</p>
 
@@ -141,7 +141,13 @@ export default () => (
       <p>Don't hesitate to contact us if you have any questions regarding our Cookie Policy.</p>
       <ul className='list-disc'>
         <li className='ml-10'>Via this Address: 80 M St SE Washington, DC 20003</li>
+        <li className='ml-10'>
+          Or email us:
+          <a className='underline' href='mailto:contact@indigov.com'>
+            contact@indigov.com
+          </a>
+        </li>
       </ul>
-    </div>{' '}
+    </div>
   </Layout>
 )
