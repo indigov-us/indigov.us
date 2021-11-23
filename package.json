@@ -44,5 +44,11 @@
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
+  },
+  "volta": {
+    "node": "14.18.1"
+  },
+  "engines": {
+    "node": "14"
   }
 }
