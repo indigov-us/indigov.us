@@ -27,7 +27,12 @@ const Footer = () => {
           </div>
           <div></div>
           <div className='md:text-right my-6 md:my-0'>
-            <a href='mailto:press@indigov.com'>Press Inquiries</a>
+            <a className='block' href='mailto:press@indigov.com'>
+              Press Inquiries
+            </a>
+            <a className='block' href='/cookie-policy'>
+              Cookie Policy
+            </a>
           </div>
         </div>
       </div>
